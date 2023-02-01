@@ -14,4 +14,4 @@ function defaultName() {
 }
 
 inputEl.addEventListener('input', addName);
-inputEl.addEventListener('blur', defaultName)
+inputEl.addEventListener('input', defaultName)

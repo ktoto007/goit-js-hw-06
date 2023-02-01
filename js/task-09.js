@@ -1,16 +1,17 @@
 function getRandomHexColor() {
   return `#${Math.floor(Math.random() * 16777215).toString(16)}`;
-};
+}
 
-const btnEl = document.querySelector('.change-color');
-const textEL = document.querySelector('.color')
-const bodyEL = document.querySelector('.body');
-
+const changeColorBtn = document.querySelector(".change-color");
+const colorName = document.querySelector(".color");
+const bodyEL = document.querySelector(".body");
+//Body я не змінив бо не знаю як зробити більш зрозумілим
+//та і наврядчи воно буде не одно
 console.log(bodyEL);
 function getNewBackgroundColor() {
   const newColor = getRandomHexColor();
   bodyEL.style.background = newColor;
-  textEL.textContent = newColor;
+  colorName.textContent = newColor;
 }
 
-btnEl.addEventListener('click', getNewBackgroundColor)
+changeColorBtn.addEventListener("click", getNewBackgroundColor);
